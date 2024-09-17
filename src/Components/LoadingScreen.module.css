@@ -1,0 +1,56 @@
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .multipleLines {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    animation: fadeIn 1s 3s forwards; /* Задержка в 3 секунды для плавного появления букв */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

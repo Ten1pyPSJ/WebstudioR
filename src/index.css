@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    background-color: black;
+}
+.container {
+    width: 1358px;
+    margin: 0 auto;
+}
